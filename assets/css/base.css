@@ -1,0 +1,69 @@
+:root {
+  --white-color: #fff;
+  --main-color: #ee4d2d;
+  --black-color: #000;
+  --text-color: #333;
+  --header-height: 120px;
+  --header-nav: 36px;
+  --header-search: calc(var(--header-height) - var(--header-nav));
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+}
+/* Share */
+.btn {
+  height: 34px;
+  border: 0px;
+  border-radius: 2px;
+  color: var(--text-color);
+  line-height: 1.6rem;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 0 12px;
+  cursor: pointer;
+}
+/* responsive */
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid__full-width {
+  width: 100%;
+}
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.grid__coloum-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.66667%;
+}
+.grid__coloum-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3333334%;
+}
+.grid__coloum-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 25%;
+}
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

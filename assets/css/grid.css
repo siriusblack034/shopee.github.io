@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 .row {
-  width: 100%;
+  
   display: flex;
   flex-wrap: wrap;
   margin-left: -4px;

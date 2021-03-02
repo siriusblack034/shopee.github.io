@@ -1,0 +1,90 @@
+/* both tablet and mobile */
+@media (max-width: 1023px) {
+  :root {
+    --header-height: 54px;
+    --header-nav: 0px;
+  }
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .pagination__number{
+    margin:0 4px;
+  }
+  .app__container {
+    margin-top: var(--header-height);
+  }
+  .header__sort-bar {
+    display: flex;
+  }
+}
+/* just tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+/* just mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  /* Header */
+  .header-with-search__logo {
+    display: block;
+  }
+  .header-with-search {
+    justify-content: space-between;
+    
+  }
+  .header__search-carts,
+  .header-with-search__logo {
+    width: unset;
+  }
+  .header-with-search__logo a {
+    display: block;
+    line-height: 0;
+  }
+  .header__search {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    height: 46px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 0 8px;
+    animation: searchCheckbox linear 0.3s;
+    display: none;
+  }
+  @keyframes searchCheckbox {
+    from {
+      opacity: 0;
+      top: calc(var(--header-height) / 2);
+    }
+    to {
+      top: var(--header-height);
+      opacity: 1;
+    }
+  }
+  .header__search-history {
+    position: fixed;
+    top: calc(var(--header-height) + 46px);
+    width: 100%;
+  }
+  #header-search__checkbox:checked ~ .header__search {
+    display: flex;
+  }
+  .footer__content{
+    text-align: center;
+  }
+  .footer__wrap-download{
+    justify-content: center;
+  }
+}

@@ -6,6 +6,7 @@
   --header-height: 120px;
   --header-nav: 36px;
   --header-search: calc(var(--header-height) - var(--header-nav));
+  --header-sort-bar: 46px;
 }
 * {
   box-sizing: inherit;
